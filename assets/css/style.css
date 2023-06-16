@@ -151,7 +151,7 @@ button {
   height: 100%;
   background-color: var(--bg-color);
   z-index: var(--z-modal);
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
 }
@@ -181,15 +181,97 @@ button {
   }
 }
 
+/* ======= DARK MODE ======== */
+.modo {
+  width: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: rgb(19, 18, 18);
+}
+
+.dark h2 {
+  color: var(--bg-color);
+}
+
+.dark h3 {
+  color: var(--bg-color);
+}
+
+.dark .product__content {
+  background-color: rgb(175, 2, 2);
+}
+
+.dark .product__stock {
+  color: var(--bg-color);
+}
+
+.dark .product__price {
+  color: var(--bg-color);
+}
+
+.dark .product__image {
+  background-color: rgb(30, 28, 28);
+}
+
+.dark .footer{
+  background-color: rgb(175, 2, 2);
+}
+
+.dark #modo {
+  color: orange;
+}
+
+.dark .cart {
+  border: 4px solid black;
+}
+
+.dark .cart__body {
+  background-color: rgb(30, 28, 28);
+}
+
+.dark .cart__empty {
+  color: var(--bg-color);
+}
+
+.dark .cart__header {
+  background-color: rgb(175, 2, 2);
+  border-bottom: 4px solid black;
+}
+
+.dark .cart__footer {
+  background-color: rgb(175, 2, 2);
+  border-top: 4px solid black;
+}
+
+.dark .cart__count--text {
+  color: var(--bg-color);
+}
+
+.dark .cart__count--item {
+  color: var(--bg-color);
+}
+
+.dark .cart__total--item {
+  color: var(--bg-color);
+}
+
+.dark .cart__title {
+  color: var(--bg-color);
+}
+
 /* ======= HEADER ======== */
 .header {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--bg-color);
+  background-color:  rgb(175, 2, 2);
   z-index: var(--z-fixed);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 10%);
+
 }
 
 .nav {
@@ -299,6 +381,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--sp-2);
+  
 }
 
 .products__title {
@@ -312,6 +395,12 @@ button {
 .product__image {
   padding: var(--sp-1);
   background-color: var(--card-color);
+  border-top:2px solid rgb(175, 2, 2);
+  border-right:2px solid rgb(175, 2, 2);
+  border-left:2px solid rgb(175, 2, 2);
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+
 }
 
 .product__image img {
@@ -330,6 +419,9 @@ button {
   background-color: var(--bg-color);
   padding: var(--sp-1-5);
   min-height: 109px;
+  border-bottom:2px solid rgb(175, 2, 2);
+  border-right:2px solid rgb(175, 2, 2);
+  border-left:2px solid rgb(175, 2, 2);
 }
 
 .product__btn {

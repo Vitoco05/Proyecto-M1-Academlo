@@ -4,6 +4,7 @@ import products from './components/products.js';
 import showCart from './components/showCart.js';
 import showMenu from './components/showMenu.js';
 import getProducts from './helpers/getProducts.js';
+import darkMode from './components/darkMode.js';
 
 
 /* UI Elements */
@@ -24,3 +25,6 @@ const { db, printProducts } = products(await getProducts())
 
 /* Cart */
 cart(db, printProducts)
+
+/* Dark Mode */
+darkMode()
